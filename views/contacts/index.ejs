@@ -10,9 +10,10 @@
       <h2>Index</h2>
       <ul>
         <% contacts.forEach(function(contact) { %>
-          <li>
-            <%= contact.name %>
-          </li>
+        <li>
+          <a href="/contacts/<%= contact._id %>"><%= contact.name %></a>
+          <!-- 1 -->
+        </li>
         <% }) %>
       </ul>
     </div>
